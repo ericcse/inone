@@ -7,13 +7,13 @@ var mongoose = require('mongoose'),
   Schema = mongoose.Schema;
 
 /**
- * Category Schema
+ * Group Schema
  */
-var CategorySchema = new Schema({
+var GroupSchema = new Schema({
   name: {
     type: String,
     default: '',
-    required: 'Please fill Category name',
+    required: 'Please fill Group name',
     trim: true
   },
   created: {
@@ -23,13 +23,7 @@ var CategorySchema = new Schema({
   user: {
     type: Schema.ObjectId,
     ref: 'User'
-  },
-  groups:{
-    type: [{
-      type: Schema.ObjectId,
-      ref: 'Group'
-    }],
-  },
+  }
 });
 
-mongoose.model('Category', CategorySchema);
+mongoose.model('Group', GroupSchema);

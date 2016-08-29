@@ -1,0 +1,1 @@
+http://stackoverflow.com/questions/2006172/how-to-reset-a-remote-git-repository-to-remove-all-commits
